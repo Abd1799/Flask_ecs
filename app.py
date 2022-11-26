@@ -5,7 +5,7 @@ import sklearn
 from flask import Flask, request, Response, jsonify
 
 
-## loading the model
+### loading the model
 model_pickle = open("./artefacts/classifier.pkl", 'rb')
 clf = pickle.load(model_pickle)
 
@@ -51,6 +51,7 @@ def prediction():
     }
 
     return jsonify(result)
+
 
 
 @app.route('/ping', methods=['GET'])
