@@ -1,5 +1,6 @@
 import pickle
 import flask
+import sklearn
 
 from flask import Flask, request, Response, jsonify
 
@@ -54,4 +55,4 @@ def prediction():
 
 @app.route('/ping', methods=['GET'])
 def ping():
-    return "Pinging Model!!"
+    return "Pinging new Model!!"
