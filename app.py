@@ -56,4 +56,4 @@ def prediction():
 
 @app.route('/ping', methods=['GET'])
 def ping():
-    return "Pinging new Model!!"
+    return "Pinging new new new Model!!"
